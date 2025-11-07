@@ -128,6 +128,101 @@ const About = () => {
         </div>
       </motion.section>
 
+      {/* Product Categories Section */}
+      <motion.section 
+        className="py-16 bg-gradient-to-b from-background to-gold-light"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        <div className="container mx-auto px-4">
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-center mb-12 text-foreground">
+            Our Product Range
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <motion.div
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -5, scale: 1.02 }}
+            >
+              <Card className="border-border hover:shadow-lg transition-all duration-300 h-full">
+                <CardContent className="p-6 text-center">
+                  <h3 className="font-playfair text-2xl font-semibold mb-4 text-foreground">
+                    Apparel for All
+                  </h3>
+                  <div className="space-y-3 text-muted-foreground font-inter">
+                    <div>
+                      <p className="font-semibold text-foreground mb-1">Ladies Wear</p>
+                      <p className="text-sm">Traditional & Modern Collections</p>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-foreground mb-1">Kids Wear</p>
+                      <p className="text-sm">Adorable Outfits for Little Ones</p>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-foreground mb-1">Men's Wear</p>
+                      <p className="text-sm">Formal & Ethnic Collections</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            <motion.div
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -5, scale: 1.02 }}
+            >
+              <Card className="border-border hover:shadow-lg transition-all duration-300 h-full">
+                <CardContent className="p-6 text-center">
+                  <h3 className="font-playfair text-2xl font-semibold mb-4 text-foreground">
+                    Saree Collections
+                  </h3>
+                  <div className="space-y-2 text-muted-foreground font-inter text-sm">
+                    <p>• Cotton Sarees</p>
+                    <p>• Silk Sarees</p>
+                    <p>• Fancy Sarees</p>
+                    <p>• Kolkata Work Sarees</p>
+                    <p>• Kanchipuram Silks</p>
+                    <p>• Bridal Collections</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            <motion.div
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -5, scale: 1.02 }}
+            >
+              <Card className="border-border hover:shadow-lg transition-all duration-300 h-full">
+                <CardContent className="p-6 text-center">
+                  <h3 className="font-playfair text-2xl font-semibold mb-4 text-foreground">
+                    Handlooms / Hosiery
+                  </h3>
+                  <div className="space-y-2 text-muted-foreground font-inter text-sm">
+                    <p>• Handloom Fabrics</p>
+                    <p>• Cotton Hosiery</p>
+                    <p>• Traditional Weaves</p>
+                    <p>• Premium Quality Materials</p>
+                    <p>• Authentic Craftsmanship</p>
+                    <p>• Regional Specialties</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+          </div>
+        </div>
+      </motion.section>
+
       {/* Values Section */}
       <motion.section 
         className="py-16"

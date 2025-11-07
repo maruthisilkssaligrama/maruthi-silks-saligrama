@@ -103,7 +103,7 @@ const Home = () => {
             </div>
             <div className="hidden sm:block h-12 w-px bg-foreground/20" />
             <div>
-              <p className="font-playfair text-4xl font-bold">10,000+</p>
+              <p className="font-playfair text-4xl font-bold">3,00,000+</p>
               <p className="font-inter text-sm">Happy Customers</p>
             </div>
             <div className="hidden sm:block h-12 w-px bg-foreground/20" />
