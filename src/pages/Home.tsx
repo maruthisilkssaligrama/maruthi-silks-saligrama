@@ -4,8 +4,8 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Sparkles, Award, Users, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import storeImage from "@/assets/store-exterior.png";
-import storeInterior from "@/assets/C_08.jpg";
+import storeImage from "@/assets/exterier.jpg";
+import storeInterior from "@/assets/Interior.jpg";
 import logo from "@/assets/maruthi_silks_logo.png";
 import { sareeCollections } from "@/data/collections";
 

@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Star, Users, TrendingUp } from "lucide-react";
 import { motion } from "framer-motion";
-import storeImage from "@/assets/store-exterior.png";
+import storeImage from "@/assets/exterier.jpg";
 
 const About = () => {
   const values = [
