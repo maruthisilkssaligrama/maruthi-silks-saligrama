@@ -7,12 +7,30 @@ export default defineConfig(() => ({
   server: {
     host: "::",
     port: 8080,
-    historyApiFallback: true,
+    middlewareMode: false,
   },
-  plugins: [react()],
+  plugins: [
+    react(),
+    {
+      name: 'spa-fallback',
+      configureServer(server) {
+        server.middlewares.use('/about', (req, res, next) => {
+          req.url = '/';
+          next();
+        });
+        server.middlewares.use('/contact', (req, res, next) => {
+          req.url = '/';
+          next();
+        });
+      },
+    },
+  ],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
+  },
+  preview: {
+    port: 8080,
   },
 }));
