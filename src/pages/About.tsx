@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Star, Users, TrendingUp } from "lucide-react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import storeImage from "@/assets/exterier.jpg";
 
 const About = () => {
@@ -29,6 +30,12 @@ const About = () => {
 
   return (
     <div className="min-h-screen">
+      {/* ✅ Canonical + Title added */}
+      <Helmet>
+        <title>About Us - Maruthi Silks Saligrama</title>
+        <link rel="canonical" href="https://www.maruthisilkssaligrama.com/about" />
+      </Helmet>
+
       {/* Header Section */}
       <motion.section 
         className="bg-gradient-to-r from-primary to-primary/80 text-white py-20"

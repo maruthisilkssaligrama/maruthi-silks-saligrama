@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Phone, Clock, Mail, Instagram, MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
   const handleWhatsApp = () => {
@@ -99,6 +100,12 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen">
+      {/* ✅ Canonical + Title added */}
+      <Helmet>
+        <title>Contact - Maruthi Silks Saligrama</title>
+        <link rel="canonical" href="https://www.maruthisilkssaligrama.com/contact" />
+      </Helmet>
+
       {/* Header Section */}
       <motion.section 
         className="bg-gradient-to-r from-primary to-primary/80 text-white py-20"

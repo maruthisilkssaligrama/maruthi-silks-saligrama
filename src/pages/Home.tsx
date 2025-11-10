@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import storeImage from "@/assets/exterier.jpg";
 import storeInterior from "@/assets/Interior.jpg";
 import logo from "@/assets/maruthi_silks_logo.png";
+import { Helmet } from "react-helmet-async";
 import { sareeCollections } from "@/data/collections";
 
 const Home = () => {
@@ -35,6 +36,12 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
+      {/* ✅ Canonical + Title added */}
+      <Helmet>
+        <title>Maruthi Silks Saligrama - Home</title>
+        <link rel="canonical" href="https://www.maruthisilkssaligrama.com/" />
+      </Helmet>
+
       {/* Hero Section */}
       <motion.section 
         className="relative h-[600px] overflow-hidden"
