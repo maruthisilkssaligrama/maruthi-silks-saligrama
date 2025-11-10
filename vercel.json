@@ -2,6 +2,9 @@
   "redirects": [
     {
       "source": "/(.*)",
+      "has": [
+        { "type": "host", "value": "maruthi-silks-saligrama.vercel.app" }
+      ],
       "destination": "https://www.maruthisilkssaligrama.com/$1",
       "permanent": true
     }
