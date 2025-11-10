@@ -89,9 +89,8 @@ const Contact = () => {
           href="https://instagram.com/maruthisilks_saligrama" 
           target="_blank"
           rel="noopener noreferrer"
-          className="text-muted-foreground font-inter hover:text-primary transition-colors flex items-center gap-2"
+          className="text-muted-foreground font-inter hover:text-primary transition-colors"
         >
-          <Instagram className="w-4 h-4" />
           @maruthisilks_saligrama
         </a>
       )

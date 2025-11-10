@@ -48,36 +48,36 @@ const About = () => {
 
       {/* Story Section */}
       <motion.section 
-        className="py-16"
+        className="py-8"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <motion.div 
-              className="space-y-6"
+              className="space-y-4"
               initial={{ x: -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h2 className="font-playfair text-4xl font-bold text-foreground">
+              <h2 className="font-playfair text-3xl lg:text-4xl font-bold text-foreground">
                 A Legacy of Excellence Since 1993
               </h2>
-              <p className="text-lg text-muted-foreground font-inter leading-relaxed">
+              <p className="text-base text-muted-foreground font-inter leading-relaxed">
                 Maruthi Silks began its journey over three decades ago with a simple vision: 
                 to bring the finest traditional textiles to the people of Saligrama. What 
                 started as a small family venture has grown into one of the region's most 
                 trusted names in silk and traditional wear.
               </p>
-              <p className="text-lg text-muted-foreground font-inter leading-relaxed">
+              <p className="text-base text-muted-foreground font-inter leading-relaxed">
                 Throughout our journey, we've remained committed to the values that our 
                 founders established - unwavering quality, authentic products, and genuine 
                 care for every customer who walks through our doors.
               </p>
-              <p className="text-lg text-muted-foreground font-inter leading-relaxed">
+              <p className="text-base text-muted-foreground font-inter leading-relaxed">
                 Today, we're proud to serve families across generations, becoming a part 
                 of their most cherished moments - from weddings to festivals, from everyday 
                 elegance to once-in-a-lifetime celebrations.
@@ -85,7 +85,7 @@ const About = () => {
             </motion.div>
 
             <motion.div 
-              className="relative"
+              className="relative max-w-md mx-auto lg:max-w-lg"
               initial={{ x: 100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
@@ -96,9 +96,9 @@ const About = () => {
                 alt="Maruthi Silks Store" 
                 className="rounded-lg shadow-2xl w-full h-auto"
               />
-              <div className="absolute -bottom-6 -right-6 bg-secondary text-foreground p-6 rounded-lg shadow-xl">
-                <p className="font-playfair text-5xl font-bold">30+</p>
-                <p className="font-inter font-semibold">Years Strong</p>
+              <div className="absolute -bottom-4 -right-4 bg-secondary text-foreground p-4 rounded-lg shadow-xl">
+                <p className="font-playfair text-3xl font-bold">30+</p>
+                <p className="font-inter font-semibold text-sm">Years Strong</p>
               </div>
             </motion.div>
           </div>
