@@ -1,5 +1,9 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://www.maruthisilkssaligrama.com/$1",
+      "permanent": true
+    }
   ]
 }
